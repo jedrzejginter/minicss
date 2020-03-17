@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Jedrzej Ginter <dzeejj@gmail.com> (https://github.com/jedrzejginter)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "7.8.7"
+  },
+  "devDependencies": {
+    "jest": "25.1.0"
+  }
 }
