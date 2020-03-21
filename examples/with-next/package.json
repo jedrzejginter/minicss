@@ -4,9 +4,18 @@
   "main": "index.js",
   "author": "Jedrzej Ginter <dzeejj@gmail.com> (https://github.com/jedrzejginter)",
   "license": "MIT",
+  "scripts": {
+    "prune-cache": "rimraf .next",
+    "dev": "yarn prune-cache && next dev",
+    "build": "yarn prune-cache && next build",
+    "start": "next start"
+  },
   "dependencies": {
     "next": "9.3.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "rimraf": "3.0.2"
   }
 }

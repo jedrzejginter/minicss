@@ -1,3 +1,8 @@
+import Button from '../components/button';
+
 export default function Index() {
-  return <div className="C(#fff) Bgc(orange):h Px(100) W(120)">Hello!!</div>
+  return <div className="C(yellowgreen) Bgc(orange):a Px(100) W(120)">
+    Hello!!<br />
+    <Button />
+  </div>
 }

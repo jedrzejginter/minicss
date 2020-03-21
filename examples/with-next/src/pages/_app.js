@@ -3,13 +3,11 @@ import '../../css/styles.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="Bgc(brown) M(150)">
+    <div className="Bgc(#09a) M(27)">
       <Component {...pageProps} />
     </div>
   );
 }
-
-// koiuhiu
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
 // perform automatic static optimization, causing every page in your app to

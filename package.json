@@ -1,7 +1,7 @@
 {
   "name": "minicss",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Jedrzej Ginter <dzeejj@gmail.com> (https://github.com/jedrzejginter)",
   "license": "MIT",
   "scripts": {
