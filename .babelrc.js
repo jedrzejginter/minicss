@@ -2,6 +2,6 @@ module.exports = {
   presets: [],
   plugins: [
     'syntax-jsx',
-    './babel-plugin',
+    ['./lib/index.js', { output: 'out/styles.json' }],
   ],
 };
