@@ -5,9 +5,8 @@
   "author": "Jedrzej Ginter <dzeejj@gmail.com> (https://github.com/jedrzejginter)",
   "license": "MIT",
   "scripts": {
-    "prune-cache": "rimraf .next",
-    "dev": "yarn prune-cache && next dev",
-    "build": "yarn prune-cache && next build",
+    "dev": "rimraf .next && next dev",
+    "build": "rimraf .next && next build",
     "start": "next start"
   },
   "dependencies": {
