@@ -3,7 +3,7 @@ import '../../css/styles.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="Bgc(#09a) M(27)">
+    <div className="Bgc(#09a) M(111)">
       <Component {...pageProps} />
     </div>
   );

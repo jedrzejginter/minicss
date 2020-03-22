@@ -1,6 +1,4 @@
 {
   "presets": ["next/babel"],
-  "plugins": [
-    ["../../lib", { "output": "css/styles.css" }]
-  ]
+  "plugins": ["../../lib"]
 }
