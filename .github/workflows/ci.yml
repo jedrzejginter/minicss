@@ -38,4 +38,4 @@ jobs:
           ${{ runner.os }}-node-modules-
 
     - run: yarn --frozen-lockfile
-    - run: npx lerna run test:unit
+    - run: yarn test
