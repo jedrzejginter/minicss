@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "rimraf": "3.0.2"
+  },
+  "minicss": {
+    "output": "public/css/styles.css"
   }
 }
