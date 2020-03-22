@@ -1,0 +1,41 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+      - develop
+    tags-ignore:
+      - '**'
+jobs:
+  lint-and-test:
+    name: Tests, lint, build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Get yarn cache dir
+      id: yarn-cache-output
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Restore yarn global cache
+      uses: actions/cache@v1
+      id: yarn-cache
+      with:
+        path: ${{ steps.yarn-cache-output.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Restore node_modules cache
+      uses: actions/cache@v1
+      id: node-modules-cache
+      with:
+        path: ./node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
+    - run: yarn --frozen-lockfile
+    - run: npx lerna run test:unit
