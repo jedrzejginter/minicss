@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`statesMapObject should remain unchanged 1`] = `
+Object {
+  "a": "active",
+  "c": "checked",
+  "d": "disabled",
+  "e": "empty",
+  "f": "focus",
+  "h": "hover",
+  "v": "visited",
+}
+`;
